@@ -170,7 +170,11 @@ const checkWinner = ()=>{
             return true
         }
     }
-    if(gameState.length == 9) {
+    let empate = false
+    for(c = 0; c < 9; c++) {
+        if(gameState[c] == null) {
+            break
+        }
         alert('Empate')
         return true
     }
